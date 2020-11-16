@@ -16,7 +16,7 @@ Create a developer account https://developer.here.com/sign-up?create=Freemium-Ba
 Create an account https://www.integromat.com/
 
 * STEP 4 -
-Download the Scenario BluePrint from this repository (We are asking Integromat if they will create a template to make this easier)
+Download the Scenario BluePrint from this repository (*We are asking Integromat if they will create a template to make this easier*)
 
 * STEP 5 -
 Create a new Twitter Scenario and then Import the Blueprint

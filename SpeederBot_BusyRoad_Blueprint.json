@@ -1,0 +1,442 @@
+{
+    "name": "SpeederBot - Tweet Speed - Busy Roads",
+    "flow": [
+        {
+            "id": 2,
+            "module": "http:ActionSendData",
+            "version": 3,
+            "parameters": {
+                "handleErrors": false
+            },
+            "mapper": {
+                "ca": "",
+                "qs": [],
+                "url": "https://traffic.ls.hereapi.com/traffic/6.1/flow.json?bbox=<CORD1>,<CORD2>;<CORD3>,<CORD4>&apiKey=<YOURAPIKEYHERE>",
+                "gzip": true,
+                "method": "get",
+                "headers": [],
+                "timeout": "",
+                "authPass": "",
+                "authUser": "",
+                "bodyType": "",
+                "shareCookies": false,
+                "parseResponse": true,
+                "followRedirect": true,
+                "useQuerystring": false,
+                "followAllRedirects": false,
+                "rejectUnauthorized": true
+            },
+            "metadata": {
+                "designer": {
+                    "x": -665,
+                    "y": 153
+                },
+                "restore": {
+                    "qs": {
+                        "mode": "chose",
+                        "items": []
+                    },
+                    "method": {
+                        "mode": "chose",
+                        "label": "GET"
+                    },
+                    "headers": {
+                        "mode": "chose",
+                        "items": []
+                    },
+                    "bodyType": {
+                        "label": ""
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "handleErrors",
+                        "type": "boolean",
+                        "label": "Evaluate all states as errors (except for 2xx and 3xx )",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "url",
+                        "type": "url",
+                        "label": "URL",
+                        "required": true
+                    },
+                    {
+                        "name": "method",
+                        "type": "select",
+                        "label": "Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "get",
+                                "head",
+                                "post",
+                                "put",
+                                "patch",
+                                "delete"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "name",
+                                "type": "text",
+                                "label": "Name",
+                                "required": true
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Headers",
+                        "labels": {
+                            "add": "Add a header",
+                            "edit": "Edit a header"
+                        }
+                    },
+                    {
+                        "name": "qs",
+                        "spec": [
+                            {
+                                "name": "name",
+                                "type": "text",
+                                "label": "Name",
+                                "required": true
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Query String",
+                        "labels": {
+                            "add": "Add parameter",
+                            "edit": "Edit parameter"
+                        }
+                    },
+                    {
+                        "name": "bodyType",
+                        "type": "select",
+                        "label": "Body type",
+                        "validate": {
+                            "enum": [
+                                "raw",
+                                "x_www_form_urlencoded",
+                                "multipart_form_data"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "parseResponse",
+                        "type": "boolean",
+                        "label": "Parse response",
+                        "required": true
+                    },
+                    {
+                        "name": "authUser",
+                        "type": "text",
+                        "label": "User name"
+                    },
+                    {
+                        "name": "authPass",
+                        "type": "password",
+                        "label": "Password"
+                    },
+                    {
+                        "name": "timeout",
+                        "type": "uinteger",
+                        "label": "Timeout",
+                        "validate": {
+                            "max": 300,
+                            "min": 1
+                        }
+                    },
+                    {
+                        "name": "shareCookies",
+                        "type": "boolean",
+                        "label": "Share cookies with other HTTP modules",
+                        "required": true
+                    },
+                    {
+                        "name": "ca",
+                        "type": "cert",
+                        "label": "Self-signed certificate",
+                        "multiline": true
+                    },
+                    {
+                        "name": "rejectUnauthorized",
+                        "type": "boolean",
+                        "label": "Reject connections that are using unverified (self-signed) certificates",
+                        "required": true
+                    },
+                    {
+                        "name": "followRedirect",
+                        "type": "boolean",
+                        "label": "Follow redirect",
+                        "required": true
+                    },
+                    {
+                        "name": "useQuerystring",
+                        "type": "boolean",
+                        "label": "Disable serialization of multiple same query string keys as arrays",
+                        "required": true
+                    },
+                    {
+                        "name": "gzip",
+                        "type": "boolean",
+                        "label": "Request compressed content",
+                        "required": true
+                    },
+                    {
+                        "name": "followAllRedirects",
+                        "type": "boolean",
+                        "label": "Follow all redirect",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "module": "builtin:BasicFeeder",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "array": "{{2.data.RWS[].RW}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": -370,
+                    "y": 153
+                },
+                "restore": {
+                    "array": {
+                        "mode": "edit"
+                    }
+                },
+                "expect": [
+                    {
+                        "mode": "edit",
+                        "name": "array",
+                        "spec": [],
+                        "type": "array",
+                        "label": "Array"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "module": "builtin:BasicFeeder",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "array": "{{11.FIS[].FI[].CF[].SSS.SS}}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": -81,
+                    "y": 154
+                },
+                "restore": {
+                    "array": {
+                        "mode": "edit"
+                    }
+                },
+                "expect": [
+                    {
+                        "mode": "edit",
+                        "name": "array",
+                        "spec": [],
+                        "type": "array",
+                        "label": "Array"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 18,
+            "module": "twitter:createTweet",
+            "version": 5,
+            "parameters": {
+                "__IMTCONN__": 1800630
+            },
+            "filter": {
+                "name": "Greater than 55",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{14.SU}}",
+                            "b": "55",
+                            "o": "number:greater"
+                        }
+                    ]
+                ]
+            },
+            "mapper": {
+                "select": "image",
+                "status": "{{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} a vehicle was detected apparently traveling an average speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
+                "possibly_sensitive": false,
+                "display_coordinates": false
+            },
+            "metadata": {
+                "designer": {
+                    "x": 231,
+                    "y": 155
+                },
+                "restore": {
+                    "select": {
+                        "label": "Image or GIF"
+                    },
+                    "__IMTCONN__": {
+                        "label": "My Twitter connection new"
+                    },
+                    "attachments": {
+                        "mode": "chose",
+                        "items": []
+                    },
+                    "display_coordinates": {
+                        "mode": "chose"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "status",
+                        "type": "text",
+                        "label": "Status",
+                        "required": true
+                    },
+                    {
+                        "name": "select",
+                        "type": "select",
+                        "label": "Upload",
+                        "validate": {
+                            "enum": [
+                                "image",
+                                "video"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "possibly_sensitive",
+                        "type": "boolean",
+                        "label": "Attached images contain sensitive content (nudity, violence, etc).",
+                        "required": true
+                    },
+                    {
+                        "name": "lat",
+                        "type": "number",
+                        "label": "Geographic Latitude",
+                        "validate": {
+                            "max": 90,
+                            "min": -90
+                        }
+                    },
+                    {
+                        "name": "long",
+                        "type": "number",
+                        "label": "Geographic Longitude",
+                        "validate": {
+                            "max": 180,
+                            "min": -180
+                        }
+                    },
+                    {
+                        "name": "display_coordinates",
+                        "type": "boolean",
+                        "label": "Display tweets coordinates",
+                        "required": true
+                    },
+                    {
+                        "name": "attachments",
+                        "spec": [
+                            {
+                                "name": "filename",
+                                "type": "filename",
+                                "label": "File Name",
+                                "semantic": "file:name"
+                            },
+                            {
+                                "name": "data",
+                                "type": "buffer",
+                                "label": "Data",
+                                "semantic": "file:data"
+                            },
+                            {
+                                "name": "media_category",
+                                "type": "select",
+                                "label": "Media Category",
+                                "options": [
+                                    {
+                                        "label": "Tweet Gif",
+                                        "value": "tweet_gif"
+                                    },
+                                    {
+                                        "label": "Tweet Image",
+                                        "value": "tweet_image"
+                                    }
+                                ]
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Attachments",
+                        "validate": {
+                            "maxItems": 4
+                        }
+                    }
+                ],
+                "advanced": true
+            }
+        }
+    ],
+    "metadata": {
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": false,
+            "sequential": false,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false
+        },
+        "designer": {
+            "orphans": [],
+            "notes": [
+                {
+                    "id": 14,
+                    "text": "WARNING:  this flow only works on Busy Roads with multiple vehicles returned in the request from Here. ",
+                    "filter": false
+                },
+                {
+                    "id": 18,
+                    "text": "Recommend filtering on Speed otherwise you will have 100s of tweets if it's a busy road.",
+                    "filter": false
+                },
+                {
+                    "id": 2,
+                    "text": "https://traffic.ls.hereapi.com/traffic/6.1/flow.json?bbox=<REPLACE>,<REPLACE>;<REPALCE>,<REPLACE>&apiKey=<YOURAPIKEYHERE>\n\n\n1. Create an account at Here \n\n2. Generate an API Key \n\n3. replace <YOURAPIKEYHERE> with your own key\n\n4. Location your road using this: https://developer.here.com/documentation/examples/rest/traffic/traffic-flow-bounding-box\n\n5: Note the 4 co-ordinates and replace the <>, <>, <>, <> with yours\n\n6. Test\n\n ",
+                    "filter": false
+                }
+            ]
+        },
+        "zone": "eu1.integromat.com"
+    }
+}

@@ -1,5 +1,5 @@
 # SpeederBot
-Twitter SpeederBot
+Twitter SpeederBot 
 
 This project was setup to highlight an ongoing concern from residents with regards to excessing speeding and only intended to highlight in a visual way speeding vehicles. There is no affiliation with Here Technologies, Integromat or LivingStreets however if you are using this for profit then please consider donating at least 25% of any profit to LivingStreets to help make roads safer see links below.
 
@@ -29,6 +29,9 @@ Configure the Twitter Connector and tweet message - please keep #SpeederBot
 
 * STEP 8 - 
 Set the time schedule and activate (recommend between 10-15min) 
+
+* STEP 9 - 
+If this has been useful please consider donating towards the running of BerkshireCar [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P32P98C)
 
 ###### Notes
 * It only samples data every few minutes and sometimes no traffic will be detected especally if the road is not busy.

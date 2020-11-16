@@ -37,4 +37,5 @@ Set the time schedule and activate (recommend between 10-15min)
 
 ###### Reference Links
 * LivingStreets Donation Page: https://www.livingstreets.org.uk/donate
+* Donations to Support BerkshireCar SpeederBot: https://ko-fi.com/berkshirecar 
 * What are Traffic APIs: https://mobility.here.com/learn/travel-apis/traffic-apis-5-powerful-options-supercharge-your-application

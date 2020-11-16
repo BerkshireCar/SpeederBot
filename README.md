@@ -13,7 +13,7 @@ Click into the "bbox" and move the map location to your desired road, try and ma
 Create a developer account https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account then create an API Key and note it down.
 
 * STEP 3 -
-Create an account https://www.integromat.com/
+Create an account https://www.integromat.com/ (*Integromat will require Payment to run the bot*)
 
 * STEP 4 -
 Download the Scenario BluePrint from this repository (*We are asking Integromat if they will create a template to make this easier*)

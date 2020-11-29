@@ -10,7 +10,7 @@ The Bot uses a flow bounding box as the source of it's traffic flow data, draw a
 Click into the "bbox" and move the map location to your desired road, try and make this as small as possible to only capture local traffic flows. Then click "Send Request" the results will appear in the black box and note down the 4 coordinates.
 
 * STEP 2 -
-Create a developer account https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account then create an API Key and note it down.
+Create a developer account https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account then create a REST API Key and note it down.
 
 * STEP 3 -
 Create an account https://www.integromat.com/ (*Integromat will require Payment to run the bot*)

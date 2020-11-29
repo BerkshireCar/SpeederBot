@@ -22,7 +22,7 @@ Download the Scenario BluePrint from this repository (*We are asking Integromat 
 Create a new Twitter Scenario and then Import the Blueprint
 
 * STEP 6 -
-Configure the HTTP connection replacing the 4 coordinates and API with your own.
+Configure the HTTP connection replacing the 4 coordinates and API with your own & replace the API key with the one your setup in STEP 2, make sure your remove the <> they are not needed.
 
 * STEP 7 -
 Configure the Twitter Connector and tweet message - please keep #SpeederBot

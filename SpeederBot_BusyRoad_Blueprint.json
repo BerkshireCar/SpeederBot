@@ -11,7 +11,7 @@
             "mapper": {
                 "ca": "",
                 "qs": [],
-                "url": "https://traffic.ls.hereapi.com/traffic/6.1/flow.json?bbox=<CORD1>,<CORD2>;<CORD3>,<CORD4>&apiKey=<YOURAPIKEYHERE>",
+                "url": "https://traffic.ls.hereapi.com/traffic/6.1/flow.json?bbox=<CORD1>,<CORD2>;<CORD3>,<CORD4>&units=imperial&apiKey=<YOURAPIKEYHERE>",
                 "gzip": true,
                 "method": "get",
                 "headers": [],

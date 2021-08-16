@@ -19,7 +19,7 @@ Create an account https://www.integromat.com/ (*Integromat will require Payment 
 Download the Scenario BluePrint from this repository (*We are asking Integromat if they will create a template to make this easier*) **NOTE**: Make sure the downloaded file is ASCII (TEXT) and has not word wraped the lines.
 
 * STEP 5 -
-Create a new Twitter Scenario and then Import the Blueprint
+Create a new Twitter Scenario and then Import the Blueprint - ![STEP 5 1](https://user-images.githubusercontent.com/74529369/129582492-4e2a9085-f7a1-4bad-be47-da4a7feeaa26.png) & ![STEP 5 2](https://user-images.githubusercontent.com/74529369/129582523-a56909b6-b6bf-4b0b-b358-e93c124390de.png)
 
 * STEP 6 -
 Configure the HTTP connection replacing the 4 coordinates and API with your own & replace the API key with the one your setup in STEP 2, make sure your remove the <> they are not needed.

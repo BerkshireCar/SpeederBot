@@ -243,12 +243,12 @@
                 "conditions": [
                     [
                         {
-                            "a": "{{9.FIS[].FI[].CF[].CN}}",
+                            "a": "{{2.FIS[].FI[].CF[].CN}}",
                             "o": "number:greater",
                             "b": "0.7"
                         },
                         {
-                            "a": "{{9.FIS[].FI[].CF[].CN}}",
+                            "a": "{{2.FIS[].FI[].CF[].CN}}",
                             "o": "number:lessorequal",
                             "b": "1.0"
                         }
@@ -315,7 +315,7 @@
                             },
                             "mapper": {
                                 "select": "image",
-                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} a vehicle was detected apparently traveling an average speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
+                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} HERE API is apparently reporting average possible speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
                                 "possibly_sensitive": false,
                                 "display_coordinates": true
                             },
@@ -489,7 +489,7 @@
                             },
                             "mapper": {
                                 "select": "image",
-                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} a vehicle was detected apparently traveling an average speed of {{13.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
+                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} HERE API is apparently reporting average possible speed of {{13.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
                                 "possibly_sensitive": false,
                                 "display_coordinates": true
                             },

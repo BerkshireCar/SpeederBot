@@ -239,6 +239,23 @@
             "module": "builtin:BasicFeeder",
             "version": 1,
             "parameters": {},
+            "filter": {
+                "name": "Only Report Realtime Data",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{11.FIS[].FI[].CF[].CN}}",
+                            "o": "number:greater",
+                            "b": "0.7"
+                        },
+                        {
+                            "a": "{{11.FIS[].FI[].CF[].CN}}",
+                            "o": "number:lessorequal",
+                            "b": "1.0"
+                        }
+                    ]
+                ]
+            },
             "mapper": {
                 "array": "{{11.FIS[].FI[].CF[].SSS.SS}}"
             },
@@ -284,7 +301,7 @@
             },
             "mapper": {
                 "select": "image",
-                "status": "{{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} a vehicle was detected apparently traveling an average speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
+                "status": "{{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} HERE API is apparently reporting average possible speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
                 "possibly_sensitive": false,
                 "display_coordinates": false
             },

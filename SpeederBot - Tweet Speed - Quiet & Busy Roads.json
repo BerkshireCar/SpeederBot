@@ -243,12 +243,12 @@
                 "conditions": [
                     [
                         {
-                            "a": "{{2.FIS[].FI[].CF[].CN}}",
+                            "a": "{{11.FIS[].FI[].CF[].CN}}",
                             "o": "number:greater",
                             "b": "0.7"
                         },
                         {
-                            "a": "{{2.FIS[].FI[].CF[].CN}}",
+                            "a": "{{11.FIS[].FI[].CF[].CN}}",
                             "o": "number:lessorequal",
                             "b": "1.0"
                         }

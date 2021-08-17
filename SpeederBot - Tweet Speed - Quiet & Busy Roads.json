@@ -238,6 +238,23 @@
             "id": 9,
             "module": "builtin:BasicRouter",
             "version": 1,
+            "filter": {
+                "name": "Only Report Realtime Data",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{9.FIS[].FI[].CF[].CN}}",
+                            "o": "number:greater",
+                            "b": "0.7"
+                        },
+                        {
+                            "a": "{{9.FIS[].FI[].CF[].CN}}",
+                            "o": "number:lessorequal",
+                            "b": "1.0"
+                        }
+                    ]
+                ]
+            },
             "mapper": null,
             "metadata": {
                 "designer": {

@@ -1,7 +1,7 @@
 # SpeederBot
 Twitter SpeederBot 
 
-PLEASE READ - ISSUES HERE BEFORE IMPLEMENTING https://github.com/BerkshireCar/SpeederBot/issues
+PLEASE READ - ISSUES LOG - BEFORE IMPLEMENTING https://github.com/BerkshireCar/SpeederBot/issues
 
 This project was setup to highlight an ongoing concern from residents with regards to excessing speeding and only intended to highlight in a visual way speeding vehicles. There is no affiliation with Here Technologies, Integromat or LivingStreets however if you are using this for profit then please consider donating at least 25% of any profit to LivingStreets to help make roads safer see links below.
 

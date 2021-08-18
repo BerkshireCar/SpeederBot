@@ -20,10 +20,14 @@ Create an account https://www.integromat.com/ (*Integromat will require Payment 
 * STEP 4 -
 Download the Scenario BluePrint from this repository (*We are asking Integromat if they will create a template to make this easier*) **NOTE**: Make sure the downloaded file is ASCII (TEXT) and has not word wraped the lines.
 
+* STEP 4.1 - The blueprints have a filter set to MPH > 155 to enable testing before tweeting, so in STEP 7 change this filter to something else.
+* ![Screenshot 2021-08-18 23 58 53](https://user-images.githubusercontent.com/74529369/129982873-ed33e998-eee1-4e90-9d88-cd5d972977e6.png)
+
 * STEP 5 -
 Create a new Twitter Scenario and then Import the Blueprint - **NOTE** the the import option is only available with basic and above account types not the free service.
 
-![STEP 5 1](https://user-images.githubusercontent.com/74529369/129582492-4e2a9085-f7a1-4bad-be47-da4a7feeaa26.png) click on the 3 dots at the bottom ![STEP 5 2](https://user-images.githubusercontent.com/74529369/129582523-a56909b6-b6bf-4b0b-b358-e93c124390de.png)
+![STEP 5 1](https://user-images.githubusercontent.com/74529369/129582492-4e2a9085-f7a1-4bad-be47-da4a7feeaa26.png)  
+* STEP 5.2 - click on the 3 dots at the bottom  ![STEP 5 2](https://user-images.githubusercontent.com/74529369/129582523-a56909b6-b6bf-4b0b-b358-e93c124390de.png)
 
 * STEP 6 -
 Configure the HTTP connection replacing the 4 coordinates and API with your own & replace the API key with the one your setup in STEP 2, make sure your remove the <> they are not needed.

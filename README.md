@@ -20,9 +20,6 @@ Create an account https://www.integromat.com/ (*Integromat will require Payment 
 * STEP 4 -
 Download the Scenario BluePrint from this repository (*We are asking Integromat if they will create a template to make this easier*) **NOTE**: Make sure the downloaded file is ASCII (TEXT) and has not word wraped the lines.
 
-* STEP 4.1 - The blueprints have a filter set to MPH > 155 to enable testing before tweeting, so in STEP 7 change this filter to something else.
-* ![Screenshot 2021-08-18 23 58 53](https://user-images.githubusercontent.com/74529369/129982873-ed33e998-eee1-4e90-9d88-cd5d972977e6.png)
-
 * STEP 5 -
 Create a new Twitter Scenario and then Import the Blueprint - **NOTE** the the import option is only available with basic and above account types not the free service.
 
@@ -34,6 +31,9 @@ Configure the HTTP connection replacing the 4 coordinates and API with your own 
 
 * STEP 7 -
 Configure the Twitter Connector and tweet message - please keep #SpeederBot
+
+* STEP 7.1 - The blueprints have a filter set to MPH > 155 to enable testing before tweeting
+* ![Screenshot 2021-08-18 23 58 53](https://user-images.githubusercontent.com/74529369/129982873-ed33e998-eee1-4e90-9d88-cd5d972977e6.png)
 
 * STEP 8 - 
 Set the time schedule and activate (recommend between 10-15min) 

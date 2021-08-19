@@ -11,6 +11,9 @@ You will need to setup 3 accounts one with Here Technology to get access to the 
 The Bot uses a flow bounding box as the source of it's traffic flow data, draw a box around your road, test and note the 4 coordinates. https://developer.here.com/documentation/examples/rest/traffic/traffic-flow-bounding-box
 Click into the "bbox" and move the map location to your desired road, try and make this as small as possible to only capture local traffic flows. Then click "Send Request" the results will appear in the black box and note down the 4 coordinates.
 
+* STEP 1.1 -
+Check the output of the Send Request. Here Technologies appear to provide outputs for Major Trunk Roads. These are A-Roads and Motorways. Although there are some B-Roads included in the output, these appear to be the exception.
+
 * STEP 2 -
 Create a developer account https://developer.here.com/sign-up?create=Freemium-Basic&keepState=true&step=account then create a REST API Key and note it down.
 

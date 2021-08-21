@@ -42,7 +42,7 @@ Configure the Twitter Connector and tweet message - please keep #SpeederBot
 Set the time schedule and activate (recommend between 10-15min) 
 
 * STEP 9 - 
-If this has been useful please consider donating towards the running of BerkshireCar [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P32P98C)
+If you have read all the issues in the issue log, have been using it for some time and it has been useful please consider donating towards BerkshireCar [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P32P98C)
 
 ###### Notes
 * It only samples data every few minutes and sometimes no traffic will be detected especally if the road is not busy.

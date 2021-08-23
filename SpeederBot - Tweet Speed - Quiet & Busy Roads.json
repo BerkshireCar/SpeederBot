@@ -315,7 +315,7 @@
                             },
                             "mapper": {
                                 "select": "image",
-                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} data suggests a vehicle was traveling an average speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
+                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} data suggests a vehicle was traveling an average speed of {{14.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot",
                                 "possibly_sensitive": false,
                                 "display_coordinates": true
                             },
@@ -489,7 +489,7 @@
                             },
                             "mapper": {
                                 "select": "image",
-                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} data suggests a vehicle was traveling an average speed of {{13.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot #SaferRoads #PavementsForPeople #WalkToSchool #RoadSafety #Speeding ",
+                                "status": "#TEST {{formatDate(2.data.CREATED_TIMESTAMP; \" DD-MM-YYYY HH:mm A\")}} data suggests a vehicle was traveling an average speed of {{13.SU}} MPH ({{11.FIS[].FI[].TMC.QD}}) in a residential area #SpeederBot",
                                 "possibly_sensitive": false,
                                 "display_coordinates": true
                             },

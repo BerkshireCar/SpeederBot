@@ -3,7 +3,9 @@ Twitter SpeederBot
 
 PLEASE READ - ISSUES LOG - BEFORE IMPLEMENTING https://github.com/BerkshireCar/SpeederBot/issues
 
-This project was setup to highlight an ongoing concern from residents with regards to excessing speeding and only intended to highlight in a visual way speeding vehicles. There is no affiliation with Here Technologies, Integromat or LivingStreets however if you are using this for profit then please consider donating at least 25% of any profit to LivingStreets to help make roads safer see links below.
+This project was setup to highlight an ongoing concern from residents with regards to excessing speeding and only intended to highlight in a public way speeding vehicles. There is no affiliation with Here Technologies, Integromat or LivingStreets however if you are using this for profit then please consider donating at least 25% of any profit to LivingStreets to help make roads safer see links below.
+
+**Update**: The twitter blueprints are **NOT recommended** for continuous use, see issue #4 instead it's recommeded you modify them to output the results to a google sheet or airtable.
 
 You will need to setup 3 accounts one with Here Technology to get access to the Traffic Flow Data and the Second with Integromat to run the workflow (Bot) and the third a Twitter account to tweet to.
 

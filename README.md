@@ -1,4 +1,4 @@
-# SpeederBot
+# SpeederBot (Not Currently Maintained or Supported)
 Twitter SpeederBot 
 
 PLEASE READ - ISSUES LOG - BEFORE IMPLEMENTING https://github.com/BerkshireCar/SpeederBot/issues
